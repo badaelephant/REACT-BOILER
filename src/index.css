@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  box-sizing: border-box;
+/* 이걸 안해주면, 막 마진이 이상하게 잡히곤 한다.  */
+}

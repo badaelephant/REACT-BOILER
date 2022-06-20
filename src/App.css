@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
+.container{
+    margin: 0 auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+header {
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
+nav{
+    width: 100%;
+    height: 80px;
+   
+    background-color: #fff ;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 1000;
+    padding-bottom: 10px;
+}
+section{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    top:150px;
+    background-color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.inner {
+    width: 100%; /* 가로 사이즈가 1200px 넘는 해상도에서는 max-width 설정 */
+    height: 100%; /* align-items 등으로 수직 가운데 정렬을 위해, 알맞은 height 설정이 필요함 */
+    margin: 0 auto; /* 가운데 정렬: 동일 요소에 width 가 설정되어 있을 때에만 적용 */
+    padding: 0rem 2rem; /* 좌우 padding 을 살짝 주어서, 좌우에 딱 붙지 않도록 함 */
+    overflow: hidden; /* 넘치는 영역에 대해서는 표시안되도록 작성해야 함 */
+    min-width: 300px
   }
-  to {
-    transform: rotate(360deg);
+  
+@media only screen and (min-width: 1200px) {
+    .inner {
+      max-width: 1200px;
+    }
   }
-}
